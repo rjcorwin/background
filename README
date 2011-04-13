@@ -1,4 +1,14 @@
+
+
 Baked up at a Drupal Dojo in Boston.
+
+== Module Dependencies ==
+Features
+ImageField	
+Override node options	
+Strongarm	
+Views	
+Views Bulk Operations
 
 == Installation ==
 1. Assign the Permission "override background published option" to the Role you want in /admin/user/permissions
@@ -9,5 +19,5 @@ Now users with role specified have permission to upload background nodes and you
 
 
 == Credits == 
-rjstatic - can take credit for the workflow aspect
+rjstatic of http://graviteklabs.com - can take credit for the workflow aspect
 Siavash of http://www.wewebworkers.com/ wrote some sweet code that rjstatic based some of this on.  In particular, the idea of using jQuery to apply the background image as opposed to patching themes.
