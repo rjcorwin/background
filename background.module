@@ -2,8 +2,12 @@
 
 include_once('background.features.inc');
 
-function background_get_background() {
-  
-
-
+function background_init(){
+	//define the content type machine name of backgrounds
+	$selected = db_result(db_query("SELECT nid FROM node WHERE status=1 AND type='background' ORDER BY RAND() LIMIT 1"));
+	$image = node_load($selected);
+	$image = $image->field_background[0]['filepath'];
+	//Secure this code
+	drupal_add_js("jQuery(document).ready(function () { $('body').css( 'background-image', 'url(/".$image.")' ) });", 'inline');
 }
+
