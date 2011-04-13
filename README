@@ -1,5 +1,3 @@
-
-
 Baked up at a Drupal Dojo in Boston.
 
 == Module Dependencies ==
@@ -15,7 +13,7 @@ Views Bulk Operations
 2. Same for "create background content" permission.
 3. Set the Access Parameters in the View "Background Admin" to the desired Role. admin/build/views/edit/background_admin
 
-Now users with role specified have permission to upload background nodes and your roles specified have access to admin/background to approve backgrounds.
+Now users with role specified have permission to upload background nodes and your roles specified have access to admin/backgrounds to approve backgrounds.
 
 
 == Credits == 
