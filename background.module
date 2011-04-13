@@ -1,3 +1,9 @@
 <?php
 
 include_once('background.features.inc');
+
+function background_get_background() {
+  
+
+
+}

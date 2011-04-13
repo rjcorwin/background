@@ -11,6 +11,30 @@ function background_ctools_plugin_api() {
 }
 
 /**
+ * Implementation of hook_imagecache_default_presets().
+ */
+function background_imagecache_default_presets() {
+  $items = array(
+    'background_preview' => array(
+      'presetname' => 'background_preview',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '500',
+            'height' => '100%',
+            'upscale' => 0,
+          ),
+        ),
+      ),
+    ),
+  );
+  return $items;
+}
+
+/**
  * Implementation of hook_node_info().
  */
 function background_node_info() {
