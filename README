@@ -6,3 +6,8 @@ Baked up at a Drupal Dojo in Boston.
 3. Set the Access Parameters in the View "Background Admin" to the desired Role. admin/build/views/edit/background_admin
 
 Now users with role specified have permission to upload background nodes and your roles specified have access to admin/background to approve backgrounds.
+
+
+== Credits == 
+rjstatic - can take credit for the workflow aspect
+Siavash of http://www.wewebworkers.com/ wrote some sweet code that rjstatic based some of this on.  In particular, the idea of using jQuery to apply the background image as opposed to patching themes.
